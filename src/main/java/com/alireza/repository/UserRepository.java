@@ -70,6 +70,7 @@ public class UserRepository {
                 System.out.println(", birthDate: " + resultSet.getDate("birth_date"));
             }
 
+            resultSet.close();
             preparedStatement.close();
             connection.close();
 
